@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities
+@tailwind utilities;
+
+body{
+    background-color: #DCEEFF;
+}
+h2{
+    font-size: 4rem;
+    line-height: 4.75rem;
+    letter-spacing: -2%;
+    font-weight: 400;
+}
+p{
+    color:#7F7F7F;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: .5%;
+}
+section{
+    margin-bottom: 2rem;
+}
+
