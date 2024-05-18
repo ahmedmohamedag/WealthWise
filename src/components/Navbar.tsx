@@ -29,10 +29,10 @@ const navLinkes = [
 
 
 const Navbar = () => {
-  const [isOpin, setIsOpin] = useState(false)
+  const [isOpin, setIsOpin] = useState(true)
 
-  const closeNav = () => { setIsOpin(true) }
-  const openNav = () => { setIsOpin(false) }
+  const closeNav = () => { setIsOpin(false) }
+  const openNav = () => { setIsOpin(true) }
 
 
   return (
@@ -41,11 +41,11 @@ const Navbar = () => {
         {/* LOGO */}
         <Logo />
         {/* LINKS */}
-        <ul className={`${!isOpin ? "hidden " : "fixed bottom-0 top-24 px-10 text-2xl right-0 flex flex-col items-center justify-center bg-blue text-center "} lg:flex items-center space-x-4 `}>
+        <ul className={`${isOpin ? "hidden" :" fixed sm:static bottom-0 top-24 px-10 text-2xl right-0   "} sm:flex flex-col sm:flex-row items-center justify-center bg-blue text-center flex space-x-4`}>
           {
             navLinkes.map(link => (
               <li className="" key={link.id}>
-                <Link to={link.path} className="capitalize hover:text-light-blue  font-normal text-base tracking-wide	" onClick={closeNav}>{link.title}</Link>
+                <Link to={link.path} className="capitalize hover:text-light-blue  font-normal text-base tracking-wide	">{link.title}</Link>
               </li>
             ))
           }
@@ -57,9 +57,9 @@ const Navbar = () => {
 
         {
           isOpin ?
-            <X className="sm:hidden w-10 h-10 hover:text-light-blue cursor-pointer" onClick={openNav} />
-            :
-            <Menu className="sm:hidden w-10 h-10 hover:text-light-blue cursor-pointer" onClick={closeNav} />
+          <Menu className="sm:hidden w-10 h-10 hover:text-light-blue cursor-pointer" onClick={closeNav }  />
+          :
+          <X className="sm:hidden w-10 h-10 hover:text-light-blue cursor-pointer" onClick={openNav}/>
         }
       </nav>
     </header>
