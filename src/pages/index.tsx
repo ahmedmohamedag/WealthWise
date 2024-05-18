@@ -1,5 +1,6 @@
 import About_Section from "../components/sections/About_Section"
 import Hero from "../components/sections/Hero"
+import Solution_Section from "../components/sections/Solution_Section"
 
 
 const Home = () => {
@@ -7,7 +8,7 @@ const Home = () => {
     <>
       <Hero />
       <About_Section />
-      {/* <Solution_Section/> */}
+      <Solution_Section/>
       {/* <Investing_Section/> */}
       {/* <Blog_Section/> */}
     </>

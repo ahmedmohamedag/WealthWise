@@ -13,6 +13,7 @@ export default {
         'gray': '#7F7F7F',
       },
     },
+    
   },
   plugins: [],
 }
