@@ -2,7 +2,7 @@ import Logo from "../common/Logo"
 
 const Footer = () => {
     return (
-        <footer className=' pt-6 px-10'>
+        <footer className=' sm:pt-6 sm:px-10'>
             <div className="container mx-auto rounded-t-[35px] px-[40px] pt-[30px] bg-blue">
 
                 <div className="grid grid-cols-12   border-b border-b-slate-400 text-white py-8 ">
