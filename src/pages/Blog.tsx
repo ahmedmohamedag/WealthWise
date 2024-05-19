@@ -62,6 +62,7 @@ const Blog = () => {
           }
         </div>
       </div>
+
     </section>
   )
 }
