@@ -7,7 +7,7 @@ interface I_Props extends HTMLAttributes<HTMLElement>{
 }
 const Caption = ({children,className,...res}:I_Props) => {
     return (
-        <caption className={`${className} uppercase text-secondary pb-4`}  {...res}>{children}</caption>
+        <caption className={`${className} uppercase text-secondary pb-4 inline-block`}  {...res}>{children}</caption>
 
     )
 }
