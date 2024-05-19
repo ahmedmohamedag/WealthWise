@@ -28,6 +28,23 @@ const FinancialPlan = [
     body: "We'll help you navigate complex financial issues, such as investment strategies, tax planning, and risk management, and provide ongoing support."
   },
 ]
+const personal_Loans = [
+  {
+    image: "Personal_Loans_2.png",
+    title: "Financial Education",
+    body: "Use positioning to fix topbars, sidebars, and backgrounds.",
+  },
+  {
+    image: "Personal_Loans_3.png",
+    title: "Market Size",
+    body: "Use positioning to fix topbars, sidebars, and backgrounds.",
+  },
+  {
+    image: "Personal_Loans_4.png",
+    title: "Investing",
+    body: "Use positioning to fix topbars, sidebars, and backgrounds.",
+  },
+]
 
 const Services = () => {
   return (
@@ -68,7 +85,6 @@ const Services = () => {
 
       </div>
       {/* 3 */}
-{/* grid items-center gap-12 py-20 sm:py-36 md:grid-cols-2 ps-2 */}
       <div className="flex flex-col gap-8 py-20 space-x-5 sm:py-36 ps-2 lg:flex-row">
         <div className="flex flex-col items-center flex-1">
           <div className="">
@@ -86,9 +102,8 @@ const Services = () => {
           }
 
         </div>
-        <img src="finwise_2_1.png" alt="" className="flex-1 ms-0"/>
+        <img src="finwise_2_1.png" alt="" className="flex-1 ms-0" />
       </div>
-      
       {/* 4 */}
       <div className="flex flex-col gap-8 py-20 space-x-5 ps-2 lg:flex-row-reverse">
         <div className="flex flex-col items-center flex-1">
@@ -107,7 +122,35 @@ const Services = () => {
           }
 
         </div>
-        <img src="finwise2_2.png" alt="" className="flex-1 ms-0"/>
+        <img src="finwise2_2.png" alt="" className="flex-1 ms-0" />
+      </div>
+      {/* 5 */}
+      <div className="flex flex-col bg-white md:p-8 rounded-3xl">
+        {/*  */}
+        <div className="flex flex-col items-center pb-10 space-x-8 md:flex-row">
+          <img src="Personal_Loans_1.png" alt="Personal_Loans_1 image" className="px-4 pt-8" />
+          <div className="">
+            <h3 className="py-10 text-4xl md:text-5xl">Personal Loans</h3>
+            <p className="pb-8 text-3xl">Life is full of unexpected expenses, from home repairs to medical bills to car accidents. If you're facing a financial challenge and need help getting back on track, a personal loan can provide the funding you need to cover your expenses.
+            </p>
+          </div>
+        </div>
+
+        {/*  */}
+        <div className="grid gap-8 px-4 py-16 md:grid-cols-3">
+          {
+            personal_Loans.map((card, index) => (
+              <div key={index} className="flex flex-col ">
+                <img src={card.image} alt="" />
+                <h3 className="py-4 text-4xl">{card.title}</h3>
+                <p className="text-xl">{card.body}</p>
+              </div>
+            ))
+          }
+
+        </div>
+
+
       </div>
     </section>
   )
