@@ -43,7 +43,7 @@ const Pricing = () => {
         <ul className="px-4 py-8 bg-white sm:px-10 lg:w-2/3 rounded-3xl">
           {
             QS.map((qs,index)=>(
-            <li key={index} className="flex gap-3 py-2 border-b sm:gap-5 sm:items-center sm:py-5 border-b-neutral-300 sm:pe-20" ><Plus /> {qs}</li>
+            <li key={index} className="flex gap-3 py-2 duration-300 border-b sm:gap-5 sm:items-center sm:py-5 border-b-neutral-300 sm:pe-20 hover:bg-slate-100 hover:cursor-pointer" ><Plus /> {qs}</li>
             ))
           }
         </ul>
