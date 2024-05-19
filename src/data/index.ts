@@ -28,3 +28,36 @@ export const Plans = {
         "Priority Support",
     ],
 };
+
+export const finwise = [
+    {
+        image: "finwise_1",
+        caption: "Finance and economics",
+        body: "Big tech’s dominance is straining the logic of passive investing",
+    },
+    {
+        image: "finwise_2",
+        caption: "fintech ",
+        body: " The story of how Dave took the long road to become a neobank",
+    },
+    {
+        image: "finwise_3",
+        caption: " fintech",
+        body: " The story of how Dave took the long road to become a neobank",
+    },
+    {
+        image: "finwise_4",
+        caption: " fintech",
+        body: " The story of how Dave took the long road to become a neobank",
+    },
+    {
+        image: "finwise_5",
+        caption: " Finance and economics",
+        body: " The story of how Dave took the long road to become a neobank",
+    },
+    {
+        image: "finwise_6",
+        caption: " ADVERTISING",
+        body: "The story of how Dave took the long road to become a neobank ",
+    },
+]
