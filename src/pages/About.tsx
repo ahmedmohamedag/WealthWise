@@ -31,7 +31,7 @@ const About = () => {
 
         <img src="about_1.png" alt="About Company image" />
         <div className="flex flex-col gap-5 ps-8">
-          <h2 className="text-3xl md:text-5xl">About Company</h2>
+          <h2 className="pt-4 text-3xl md:text-5xl">About Company</h2>
           <p>We're constantly pushing the boundaries of what's possible and seeking new ways to improve our services and help our clients achieve their goals.</p>
           <h3 className="text-3xl">Vision</h3>
           <p >Our vision is to create a better financial future for everyone. We believe that everyone deserves access to financial services and resources that empower them to achieve their goals and live the life they want.</p>
@@ -40,12 +40,12 @@ const About = () => {
         </div>
       </div>
       {/* History */}
-      <div className="py-10 ">
+      <div className="px-3 py-10">
         <h2 className="text-4xl md:text-6xl">History</h2>
         <div className="grid items-center grid-cols-1 gap-6 my-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
           {
             historyData.map((item,index)=>(
-              <div className="px-0 py-10 md:px-4 justify-self-center" key={index}>
+              <div className="py-10 md:px-4 justify-self-center" key={index}>
                 <TrendingUp size={50} color="#F4B100" />
                 <h2 className="py-6 text-3xl">{item.year}</h2>
                 <p className="py-4">{item.body}</p>
