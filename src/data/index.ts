@@ -61,3 +61,44 @@ export const finwise = [
         body: "The story of how Dave took the long road to become a neobank ",
     },
 ]
+
+export const historyData = [
+    {
+        year: "2005",
+        body: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit",
+        date: "07 June 2012",
+    },
+    {
+        year: "2010",
+        body: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit",
+        date: "07 June 2012",
+    },
+    {
+        year: "2013",
+        body: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit",
+        date: "07 June 2012",
+    },
+    {
+        year: "2020-Now",
+        body: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit",
+        date: "07 June 2012",
+    },
+]
+export const achievements = [
+    {
+        number: "15+",
+        text: "YEARS EXPERIENCES",
+    },
+    {
+        number: "3050",
+        text: "LOANS APPROVED",
+    },
+    {
+        number: "52",
+        text: "BUSINESS PARTNERS",
+    },
+    {
+        number: "21,000+",
+        text: ">HAPPY CUSTOMERS",
+    },
+]

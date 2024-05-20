@@ -1,27 +1,6 @@
 import { TrendingUp } from "lucide-react"
+import { achievements, historyData } from "../data"
 
-const historyData=[
-  {
-    year:"2005",
-    body:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit",
-    date:"07 June 2012",
-  },
-  {
-    year:"2010",
-    body:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit",
-    date:"07 June 2012",
-  },
-  {
-    year:"2013",
-    body:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit",
-    date:"07 June 2012",
-  },
-  {
-    year:"2020-Now",
-    body:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit",
-    date:"07 June 2012",
-  },
-]
 const About = () => {
   return (
 
@@ -44,7 +23,7 @@ const About = () => {
         <h2 className="text-4xl md:text-6xl">History</h2>
         <div className="grid items-center grid-cols-1 gap-6 my-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
           {
-            historyData.map((item,index)=>(
+            historyData.map((item, index) => (
               <div className="py-10 md:px-4 justify-self-center" key={index}>
                 <TrendingUp size={50} color="#F4B100" />
                 <h2 className="py-6 text-3xl">{item.year}</h2>
@@ -60,6 +39,24 @@ const About = () => {
         </div>
       </div>
       {/* Our achievements */}
+      <div className="flex flex-col items-center gap-10 my-10 xl:flex-row">
+        <img src="about_2.png" alt=" Our achievements image" className="" />
+        <div className="p-10 py-32 text-white h- rounded-3xl bg-blue">
+          <h2 className="text-3xl md:text-5xl">Our achievements</h2>
+          <p className="py-10 text-xl text-light-blue">We're committed to achieving excellence in everything we do. Over the years, we've worked hard to build a reputation for providing exceptional services and delivering outstanding results for our clients. We're proud of our achievements and milestones, and we want to share them with you.</p>
+          <div className="grid gap-2 md:grid-cols-2">
+            {
+              achievements.map((achiev, index) => (
+                <div key={index} className="flex flex-col gap-4">
+                  <span className="text-4xl">{achiev.number}</span>
+                  <span className="w-full text-secondary">{achiev.text}</span>
+                </div>
+              ))
+            }
+          </div>
+
+        </div>
+      </div>
       {/* Our Management */}
       {/*Brand  */}
       <div className="grid items-center grid-cols-1 gap-6 my-16 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 justify-items-center">
