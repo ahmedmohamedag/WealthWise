@@ -131,3 +131,27 @@ export const managementTeam = [
         linkedin: "#",
     },
 ]
+
+export const homeBlogData = [
+    {
+        image: "homePage/home_blog_2.png",
+        alt: "home_blog image",
+        caption: "fintech",
+        body: "The story of how Dave took the long road to become a neobank",
+        author: "BY ASHLEY VANCE",
+    },
+    {
+        image: "homePage/home_blog_3.png",
+        alt: "home_blog image",
+        caption: "fintech",
+        body: "The story of how Dave took the long road to become a neobank",
+        author: "BY ASHLEY VANCE",
+    },
+    {
+        image: "homePage/home_blog_4.png",
+        alt: "home_blog image",
+        caption: "fintech",
+        body: "The story of how Dave took the long road to become a neobank",
+        author: "BY ASHLEY VANCE",
+    },
+]
