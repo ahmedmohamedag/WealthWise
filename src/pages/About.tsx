@@ -1,5 +1,5 @@
 import { TrendingUp } from "lucide-react"
-import { achievements, historyData } from "../data"
+import { achievements, historyData, managementTeam } from "../data"
 
 const About = () => {
   return (
@@ -58,8 +58,32 @@ const About = () => {
         </div>
       </div>
       {/* Our Management */}
+      <div className="">
+        <h2 className="text-4xl py-7">Our Management</h2>
+        <div className="grid items-center grid-cols-1 gap-6 px-5 my-16 xl:grid-cols-2 justify-items-center xl:justify-items-start">
+
+          {
+            managementTeam.map((user, index) => (
+              <div key={index} className="relative items-center justify-center sm:p-5 sm:w-fit">
+                <img src={user.image} />
+                {/* Content */}
+                <div className="p-5 -translate-y-10 bg-white sm:-translate-y-1/2 md:absolute sm:top-1/2 rounded-b-3xl sm:-right-60 sm:rounded-3xl">
+                  <h2 className="py-3 text-2xl">{user.name}</h2>
+                  <span className="text-sm text-secondary">{user.caption}</span>
+                  <p className="py-5 text-sm">Amet minim mollit non deserunt <br />ullamco est sit etsi aliqua dolor do amet <br />sint. Velit officia consequat duis enim<br /> velit mollit.</p>
+                  <div className="flex gap-4 py-5">
+                    <span className="w-8 h-8 rounded-full bg-gray"></span>
+                    <span className="w-8 h-8 rounded-full bg-gray"></span>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+
+      </div>
       {/*Brand  */}
-      <div className="grid items-center grid-cols-1 gap-6 my-16 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 justify-items-center">
+      <div className="grid items-center grid-cols-1 gap-6 my-16 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 justify-items-center lg:py-16">
         <h2 className="text-5xl font-semibold py-7 md:py-0">Trusted by</h2>
         <img src="google.png" alt="google image" />
         <img src="Pay.png" alt="pay imag" />

@@ -1,10 +1,4 @@
-/**
- * An object representing different plans with their respective features.
- * @typedef {Object} Plans
- * @property {string[]} plan_one - Features of the first plan.
- * @property {string[]} plan_two - Features of the second plan.
- * @property {string[]} plan_three - Features of the third plan.
- **/
+
 export const Plans = {
     plan_one: [
         "Get paid 2 days early",
@@ -100,5 +94,40 @@ export const achievements = [
     {
         number: "21,000+",
         text: ">HAPPY CUSTOMERS",
+    },
+]
+
+export const managementTeam = [
+    {
+        image: "our_management/michael.png",
+        name: "Michael Steuber",
+        caption: "EXECUTIVE CHAIRMAN",
+        body: "Amet minim mollit non deserunt<br /> ullamco est sit etsi aliqua dolor do amet <br />sint. Velit officia consequat duis enim<br /> velit mollit.",
+        twitter: "#",
+        linkedin: "#",
+    },
+    {
+        image: "our_management/hannah.png",
+        name: "Hannah Hansen ",
+        caption: "EXECUTIVE CHAIRMAN",
+        body: "Amet minim mollit non deserunt ullamco est sit etsi aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        twitter: "#",
+        linkedin: "#",
+    },
+    {
+        image: "our_management/clarence.png",
+        name: "Clarence Veum V ",
+        caption: "EXECUTIVE CHAIRMAN",
+        body: "Amet minim mollit non deserunt ullamco est sit etsi aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        twitter: "#",
+        linkedin: "#",
+    },
+    {
+        image: "our_management/jasmine.png",
+        name: "Jasmine McClure ",
+        caption: "EXECUTIVE CHAIRMAN",
+        body: "Amet minim mollit non deserunt ullamco est sit etsi aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        twitter: "#",
+        linkedin: "#",
     },
 ]
