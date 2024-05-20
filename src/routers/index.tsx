@@ -5,7 +5,7 @@ import Contact from "../pages/Contact"
 import Pricing from "../pages/Pricing"
 import Services from "../pages/Services"
 import Blog from "../pages/Blog"
-import Home from "../pages"
+import Home from "../pages/Hpme"
 
 const router = createBrowserRouter((createRoutesFromElements(
     <>

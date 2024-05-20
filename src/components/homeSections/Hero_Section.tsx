@@ -1,19 +1,13 @@
 import { CircleArrowRight } from "lucide-react"
 import Button from "../../common/Button"
 
-const Hero = () => {
-    /**
- * 
-    line-height: 4.75rem;
-    letter-spacing: -2%;
-    font-weight: 400;
- */
+const Hero_Section = () => {
     return (
-        <section className="flex justify-between lg:flex-row flex-col space-x-6 font-medium items-center">
+        <section className="flex flex-col items-center justify-between space-x-6 font-medium lg:flex-row">
             {/* Header body */}
-            <div className="sm:me-12 sm:pe-12 px-3">
+            <div className="px-3 sm:me-12 sm:pe-12">
                 <div className="pb-6">
-                    <h2 className="pb-5 sm:pe-0 md:pe-20 text-3xl sm:text-4xl  md:text-6xl ">Empower Your Financial Future with FinWise</h2>
+                    <h2 className="pb-5 text-3xl sm:pe-0 md:pe-20 sm:text-4xl md:text-6xl ">Empower Your Financial Future with FinWise</h2>
                     <p className="">We help businesses stand out in crowded markets. When customers have a positive experience with a brand, they are more likely to remember it.</p>
                 </div>
                 <Button className="w-full sm:w-fit ">
@@ -26,4 +20,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default Hero_Section

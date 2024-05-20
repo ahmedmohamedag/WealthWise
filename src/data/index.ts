@@ -1,5 +1,5 @@
 
-export const Plans = {
+const Plans = {
     plan_one: [
         "Get paid 2 days early",
         "Fee Free Overdraft",
@@ -22,8 +22,7 @@ export const Plans = {
         "Priority Support",
     ],
 };
-
-export const finwise = [
+const BlogGridData = [
     {
         image: "finwise_1",
         caption: "Finance and economics",
@@ -55,8 +54,7 @@ export const finwise = [
         body: "The story of how Dave took the long road to become a neobank ",
     },
 ]
-
-export const historyData = [
+const historyData = [
     {
         year: "2005",
         body: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Amet minim mollit non deserunt ullamco est sit",
@@ -78,7 +76,7 @@ export const historyData = [
         date: "07 June 2012",
     },
 ]
-export const achievements = [
+const achievements = [
     {
         number: "15+",
         text: "YEARS EXPERIENCES",
@@ -96,8 +94,7 @@ export const achievements = [
         text: ">HAPPY CUSTOMERS",
     },
 ]
-
-export const managementTeam = [
+const managementTeam = [
     {
         image: "our_management/michael.png",
         name: "Michael Steuber",
@@ -131,8 +128,7 @@ export const managementTeam = [
         linkedin: "#",
     },
 ]
-
-export const homeBlogData = [
+const homeBlogData = [
     {
         image: "homePage/home_blog_2.png",
         alt: "home_blog image",
@@ -155,3 +151,111 @@ export const homeBlogData = [
         author: "BY ASHLEY VANCE",
     },
 ]
+const Feature_card = [
+    {
+        title: "Financial Planning",
+        body: "Secure Your Financial Future with Expert Financial Planning. Start Today!",
+    },
+    {
+        title: "Money Management",
+        body: "With experience in all market conditions, we recognize what processes and solutions.",
+    },
+    {
+        title: "Strategic Partner",
+        body: "With experience in all market conditions, we recognize what processes and solutions.",
+    },
+]
+const FinancialPlan = [
+    {
+        title: "First Funding",
+        body: "Whether you're planning for retirement, saving for a child's education, or buying a home, we have the tools and resources you need to succeed."
+    },
+    {
+        title: "Business Operational",
+        body: "Our team of experienced financial planners will work with you to understand your unique needs and develop a customized plan that fits your goals."
+    },
+    {
+        title: "Business Expansion",
+        body: "We'll help you navigate complex financial issues, such as investment strategies, tax planning, and risk management, and provide ongoing support."
+    },
+]
+const personal_Loans = [
+    {
+        image: "Personal_Loans_2.png",
+        title: "Financial Education",
+        body: "Use positioning to fix topbars, sidebars, and backgrounds.",
+    },
+    {
+        image: "Personal_Loans_3.png",
+        title: "Market Size",
+        body: "Use positioning to fix topbars, sidebars, and backgrounds.",
+    },
+    {
+        image: "Personal_Loans_4.png",
+        title: "Investing",
+        body: "Use positioning to fix topbars, sidebars, and backgrounds.",
+    },
+]
+const FAQS = [
+    " How do you ensure the security of my personal and financial information?",
+    "How do you help with finance management?",
+    "How can I apply for a loan with your company?",
+    "What services does your company offer?",
+    "How do I contact customer support?",
+]
+const navLinkes = [
+    {
+        title: "Home",
+        path: "",
+        id: "0_HOM",
+    },
+    {
+        title: "services",
+        path: "services",
+        id: "0_SER",
+    },
+    {
+        title: "pricing",
+        path: "pricing",
+        id: "0_PRI",
+    },
+    {
+        title: "about",
+        path: "about",
+        id: "0_ABO",
+    },
+    {
+        title: "blog",
+        path: "blog",
+        id: "0_BLO",
+    },
+]
+const LatestBlog =[
+    {
+        image:"blog_1.png",
+        capction:"fintech",
+        title:"The story of how Dave took the long road to become a neobank",
+        date:"APR 4, 2023"
+    },
+    {
+        image:"blog_2.png",
+        capction:"ADVERTISING",
+        title:"How To Set Short and Long Term Career Goals",
+        date:"MAR 28, 2023"
+    },
+]
+
+export {
+    Feature_card,
+    FinancialPlan,
+    personal_Loans,
+    Plans,
+    historyData,
+    achievements,
+    managementTeam,
+    homeBlogData,
+    FAQS,
+    BlogGridData,
+    navLinkes,
+    LatestBlog,
+}

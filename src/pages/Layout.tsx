@@ -7,7 +7,7 @@ const RoutLayout = () => {
     return (
         <div className="scroll-smooth">
             <Navbar />
-            <div className="container mx-auto">
+            <div className="container mx-auto mt-32">
                 <Outlet />
             </div>
             <ScrollToTop/>

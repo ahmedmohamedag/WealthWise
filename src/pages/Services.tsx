@@ -1,157 +1,16 @@
-import Caption from "../common/Caption"
-
-const Feature_card = [
-  {
-    title: "Financial Planning",
-    body: "Secure Your Financial Future with Expert Financial Planning. Start Today!",
-  },
-  {
-    title: "Money Management",
-    body: "With experience in all market conditions, we recognize what processes and solutions.",
-  },
-  {
-    title: "Strategic Partner",
-    body: "With experience in all market conditions, we recognize what processes and solutions.",
-  },
-]
-const FinancialPlan = [
-  {
-    title: "First Funding",
-    body: "Whether you're planning for retirement, saving for a child's education, or buying a home, we have the tools and resources you need to succeed."
-  },
-  {
-    title: "Business Operational",
-    body: "Our team of experienced financial planners will work with you to understand your unique needs and develop a customized plan that fits your goals."
-  },
-  {
-    title: "Business Expansion",
-    body: "We'll help you navigate complex financial issues, such as investment strategies, tax planning, and risk management, and provide ongoing support."
-  },
-]
-const personal_Loans = [
-  {
-    image: "Personal_Loans_2.png",
-    title: "Financial Education",
-    body: "Use positioning to fix topbars, sidebars, and backgrounds.",
-  },
-  {
-    image: "Personal_Loans_3.png",
-    title: "Market Size",
-    body: "Use positioning to fix topbars, sidebars, and backgrounds.",
-  },
-  {
-    image: "Personal_Loans_4.png",
-    title: "Investing",
-    body: "Use positioning to fix topbars, sidebars, and backgrounds.",
-  },
-]
+import Blog_Services_Siction from "../components/servicesSections/Blog_Services_Siction"
+import FeaturesSection from "../components/servicesSections/FeaturesSection"
+import Finanial_Plan_Section from "../components/servicesSections/Finanial_Plan_Section"
+import HeroServices from "../components/servicesSections/HeroServices"
 
 const Services = () => {
   return (
     <section className="px-2 py-10">
-      {/* 1 */}
-      <div className="grid items-center gap-8 md:grid-cols-2 ps-2">
-        <img src="Payment_With_Card_3.png" className="mx-auto lg:w-2/4" />
-        <div className="">
-          <h2 className="py-3 text-3xl sm:text-4xl">Award winning <br />
-            business management</h2>
-          <p className="pt-5">We understand that running a business is challenging. That's why we offer business management services designed to help you achieve your goals and grow your business. Whether you're just starting out or looking to take your business to the next level, we have the tools and expertise you need to succeed.</p>
-        </div>
-      </div>
-      {/* 2 */}
-      <div className="text-center">
-        <div className="mt-32 mb-12">
-          <Caption className="text-xl">FEATURES</Caption>
-          <h2 className="pb-10 text-2xl sm:text-5xl">Start your journey to better credit</h2>
-
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.Amet minim mollit non deserunt ullamco est
-          </p>
-        </div>
-        {/* Feature_card */}
-        <div className="grid gap-16 pt-20 lg:grid-cols-3 lg:gap-8">
-          {
-            Feature_card.map((card, index) => (
-              <div className="relative flex flex-col items-center px-5 py-10 bg-white rounded-2xl" key={index}>
-                <h3 className="py-8 text-3xl">{card.title}</h3>
-                <p>{card.body}</p>
-                {/* circal */}
-                <div className="absolute top-0 w-20 h-20 -translate-y-1/2 rounded-full bg-blue"></div>
-              </div>
-            )
-            )
-          }
-        </div>
-
-      </div>
-      {/* 3 */}
-      <div className="flex flex-col gap-8 py-20 space-x-5 sm:py-36 ps-2 lg:flex-row">
-        <div className="flex flex-col items-center flex-1">
-          <div className="">
-            <h2 className="text-4xl sm:text-6xl pb-7">Financial Planning</h2>
-            <p className="pt-3 text-2xl">We understand that financial planning can be overwhelming and confusing. That's why we offer expert guidance and support to help you make informed decisions and achieve your goals.</p>
-          </div>
-
-          {
-            FinancialPlan.map((plan, index) => (
-              <div className="" key={index}>
-                <h3 className="py-5 text-3xl">{plan.title}</h3>
-                <p className="text-2xl">{plan.body}</p>
-              </div>
-            ))
-          }
-
-        </div>
-        <img src="finwise_2_1.png" alt="" className="flex-1 ms-0" />
-      </div>
-      {/* 4 */}
-      <div className="flex flex-col gap-8 py-20 space-x-5 ps-2 lg:flex-row-reverse">
-        <div className="flex flex-col items-center flex-1">
-          <div className="">
-            <h2 className="text-4xl sm:text-6xl pb-7">Financial Planning</h2>
-            <p className="pt-3 text-2xl">We understand that financial planning can be overwhelming and confusing. That's why we offer expert guidance and support to help you make informed decisions and achieve your goals.</p>
-          </div>
-
-          {
-            FinancialPlan.map((plan, index) => (
-              <div className="" key={index}>
-                <h3 className="py-5 text-3xl">{plan.title}</h3>
-                <p className="text-2xl">{plan.body}</p>
-              </div>
-            ))
-          }
-
-        </div>
-        <img src="finwise2_2.png" alt="" className="flex-1 ms-0" />
-      </div>
-      {/* 5 */}
-      <div className="flex flex-col bg-white md:p-8 rounded-3xl">
-        {/*  */}
-        <div className="flex flex-col items-center pb-10 space-x-8 md:flex-row">
-          <img src="Personal_Loans_1.png" alt="Personal_Loans_1 image" className="px-4 pt-8" />
-          <div className="">
-            <h3 className="py-10 text-4xl md:text-5xl">Personal Loans</h3>
-            <p className="pb-8 text-3xl">Life is full of unexpected expenses, from home repairs to medical bills to car accidents. If you're facing a financial challenge and need help getting back on track, a personal loan can provide the funding you need to cover your expenses.
-            </p>
-          </div>
-        </div>
-
-        {/*  */}
-        <div className="grid gap-8 px-4 py-16 md:grid-cols-3">
-          {
-            personal_Loans.map((card, index) => (
-              <div key={index} className="flex flex-col ">
-                <img src={card.image} alt="" />
-                <h3 className="py-4 text-3xl md:text-4xl">{card.title}</h3>
-                <p className="text-xl">{card.body}</p>
-              </div>
-            ))
-          }
-
-        </div>
-
-
-      </div>
+      <HeroServices />
+      <FeaturesSection />
+      <Finanial_Plan_Section dir="lg:flex-row" />
+      <Finanial_Plan_Section dir="lg:flex-row-reverse" />
+      <Blog_Services_Siction />
     </section>
   )
 }
