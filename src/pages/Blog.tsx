@@ -52,8 +52,8 @@ const Blog = () => {
         {/* finwise */}
         <div className="grid gap-5 py-20 md:grid-cols-2 lg:grid-cols-3">
           {
-            finwise.map(e => (
-              <div className="px-2">
+            finwise.map((e,i) => (
+              <div key={i} className="px-2">
                 <img src={`${e.image}.png`} alt="" />
                 <Caption className="py-2">{e.caption}</Caption>
                 <h3 className="px-2 text-2xl">{e.body}</h3>
@@ -62,7 +62,6 @@ const Blog = () => {
           }
         </div>
       </div>
-
     </section>
   )
 }

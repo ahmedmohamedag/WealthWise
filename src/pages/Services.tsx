@@ -142,7 +142,7 @@ const Services = () => {
             personal_Loans.map((card, index) => (
               <div key={index} className="flex flex-col ">
                 <img src={card.image} alt="" />
-                <h3 className="py-4 text-4xl">{card.title}</h3>
+                <h3 className="py-4 text-3xl md:text-4xl">{card.title}</h3>
                 <p className="text-xl">{card.body}</p>
               </div>
             ))

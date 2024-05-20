@@ -52,7 +52,7 @@ const Navbar = () => {
         </ul>
         {/* BUTTON */}
         <Link to="/contact">
-          <Button className="hidden px-8 py-3 bg-white rounded-xl text-blue sm:flex">
+          <Button  className="hidden px-8 py-3 duration-300 bg-white rounded-xl text-blue sm:flex hover:bg-secondary hover:text-white">
             Contact
           </Button>
         </Link>
