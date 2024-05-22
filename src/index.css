@@ -2,21 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     background-color: #DCEEFF;
 }
 
-p{
-    color:#7F7F7F;
+p {
+    color: #7F7F7F;
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 2.25rem;
     letter-spacing: .5%;
 }
-section{
+
+section {
     margin-bottom: 2rem;
 }
 
-#Navbar_Overlay{
+#Navbar_Overlay {
     background-color: #38a2ffe1;
+}
+
+.active {
+    color: #F4B100;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F4B100;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #3998eb;
+    cursor: grab;
 }

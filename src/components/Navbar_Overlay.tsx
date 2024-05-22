@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import {  NavLink } from "react-router-dom"
 import { navLinkes } from "../data"
 
 const Navbar_Overlay = () => {
@@ -8,12 +8,12 @@ const Navbar_Overlay = () => {
                 {
                     navLinkes.map(link => (
                         <li className="" key={link.id}>
-                            <Link to={link.path} className="text-xl tracking-wide capitalize font-xl hover:text-light-blue ">{link.title}</Link>
+                            <NavLink to={link.path} className="text-xl tracking-wide capitalize font-xl hover:text-light-blue ">{link.title}</NavLink>
                         </li>
                     ))
                 }
                 <li>
-                    <Link to="/contact" className="text-xl tracking-wide capitalize font-xl hover:text-light-blue ">Contact</Link>
+                    <NavLink to="/contact" className="text-xl tracking-wide capitalize font-xl hover:text-light-blue ">Contact</NavLink>
                 </li>
 
             </ul>
