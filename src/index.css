@@ -25,6 +25,10 @@ section {
 .active {
     color: #F4B100;
 }
+a.active button{
+    color: #f7f7f7;
+    background-color: #F4B100;
+}
 
 ::-webkit-scrollbar {
     width: 8px;
