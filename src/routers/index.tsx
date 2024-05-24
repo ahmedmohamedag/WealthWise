@@ -6,6 +6,7 @@ import Pricing from "../pages/Pricing"
 import Services from "../pages/Services"
 import Blog from "../pages/Blog"
 import Home from "../pages/Hpme"
+import NotFound from "../pages/NotFound"
 
 const router = createBrowserRouter((createRoutesFromElements(
     <>
@@ -17,7 +18,7 @@ const router = createBrowserRouter((createRoutesFromElements(
             <Route path="pricing" element={<Pricing />} />
             <Route path="contact" element={<Contact />} />
         </Route>
-
+        <Route path="*" element={<NotFound />} />
     </>
 )))
 
